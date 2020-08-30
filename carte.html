@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>pièces de drone </title>
+<meta charset="utf-8"/>
+<link rel="stylesheet"href="carte.css"/>
+
+    </head>
+    <body>
+        <section class="entete">
+            <img src="https://images.clipartlogo.com/files/istock/previews/1061/106188903-flying-drone-vector-illustration-isolated-on-blue-sky-background-cartoon.jpg" height="70px" width="110px" alt="img">
+            <h2><i>Drone-Shop</i></h2>
+        </section>
+
+        <section class="section2">
+        <div class="drone">
+          <div class="DJI-TELLO">
+            <p class="p0"><b>DJI-TELLO</b></p>
+                <div class="article1">
+                  <img id="im1" src="https://www.droneshop.com/images/products/444479/protection-dhelice-pour-dji_tello_protec.jpg" height="250px"width="300px"  alt="img1">
+                  <p id="p11">Protection d'hélice pour DJI TELLO</p>
+                  <p id="p21">7</p>
+                  <a href="#" class="m"  onClick=" ajouter('pannier','im1','p11','p21')" ><b>Ajouter au pannier</b></a>
+                  <a  onclick="heart('y')"><svg id="y" width="1em" style="color:black;" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                  </svg>
+                  </a>
+                </div>
+
+               <div class="article2">
+                  <img id='im2'  src="https://www.droneshop.com/images/thumbnails/products/437665/400x400/jeu-dhelices-tello-ryze-dji_tello_prop-1.png" height="250px"width="300px" alt="img2">
+                  <p id="p12">Jeu d'hélices TELLO RYZE</p>
+                  <p id="p22">4</p>
+                  <a href="#" class="m" onClick="ajouter('pannier','im2','p12','p22')" ><b>Ajouter au pannier</b></a>
+                  <a  onclick=" heart('y1')">  <svg width="1em" height="1em" style="color:black;" viewBox="0 0 16 16" id="y1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                  </svg>
+                  </a>
+                </div>
+
+         </div>
+         <div class="DJI-PHANTOM-4">
+            <p class="p0"><b>DJI PHANTOM 4</b></p>
+              <div class="article3">
+                <img id='im3' src="https://www.droneshop.com/images/thumbnails/products/447822/400x400/nacelle-camera-de-remplac-dji_ph4pro_part63.jpg"height="250px"width="300px" alt="img3">
+                <p id="p13">Nacelle caméra de remplacment pour DJI PHANTOM 4 PRO/ADV</p>
+                <p id="p23">940</p>
+                <a href="#" class="m" onClick="ajouter('pannier','im3','p13','p23')" ><b>Ajouter au pannier</b></a>
+                <a onclick=" heart('y2')"> <svg width="1em" height="1em" style="color:black;" viewBox="0 0 16 16" id="y2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                </svg>
+                </a>
+              </div>
+              <div class="article4">
+                <img id='im4' src="https://www.droneshop.com/images/products/444500/fixations-adaptateur-heli-fix_hel_ph4.jpg"height="250px"width="300px" alt="img4">
+                <p id="p14">Fixations adaptateur hélices PHANTOM 4 PRO/PRO+ OBSIDIAN DJI</p>
+                <p id="p24">10</p>
+                <a href="#" class="m" onClick="ajouter('pannier','im4','p14','p24')"  ><b>Ajouter au pannier</b></a>
+                <a  onclick=" heart('y3')">  <svg width="1em" height="1em" style="color:black;" viewBox="0 0 16 16" id="y3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                </svg>
+                </a>
+              </div>
+            </div>
+        </div> 
+
+        <div id="actes" >
+            <table border ="l" id="pannier">
+              <thead>
+              <th width="160px" >Image</th>
+              <th width="180px">Name</th>
+              <th width="100px">Prix unitaire</th>
+              <th width="120px">Quantité </th>
+              <th width="100px">Prix total</th>
+              <th>Supprimer</th>
+              </thead>
+            </table>
+          </div>
+
+          <div class="h">
+            <div class="payement">
+              <p><b>PAYEMENT</b></p>
+            </div>
+            <div class="somme">
+    
+            </div>
+          </div>
+          
+        </section>
+        
+        <script src='./js/carte.js' rel='javascript'></script>
+        
+      </body>
+</html>
